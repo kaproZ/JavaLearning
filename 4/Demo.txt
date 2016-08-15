@@ -1,0 +1,10 @@
+¡¾1¡¿String (byte[] bytes) 
+Constructs a new String by decoding the specified array of bytes using the platform's default charset.
+¡¾2¡¿String(byte[] bytes, int offset, int length) 
+Constructs a new String by decoding the specified subarray of bytes using the platform's default charset.
+¡¾3¡¿byte[] getBytes() 
+Encodes this String into a sequence of bytes using the platform's default charset, storing the result into a new byte array. 
+¡¾4¡¿public byte[] getBytes(String charsetName)
+                throws UnsupportedEncodingExceptionEncodes this String into a sequence of bytes using the named charset, storing the result into a new byte array. 
+The behavior of this method when this string cannot be encoded in the given charset is unspecified. The CharsetEncoder class should be used when more control over the encoding process is required.
+
