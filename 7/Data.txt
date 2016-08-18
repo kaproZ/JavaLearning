@@ -1,0 +1,12 @@
+CREATE TABLE member(
+		mid		NUMBER,
+		name	VARCHAR2(50),
+		CONSTRAINT pk_mid PRIMARY KEY(mid)
+);
+CREATE TABLE car(
+		cid		NUMBER,
+		mid		NUMBER,
+		pname	VARCHAR2(50),
+		CONSTRAINT fk_mid FORIEGN KEY(mid) REFERENCES member(mid),
+		CONSTRAINT pk_mid2 PRIMARY KEY(mid)   
+);
