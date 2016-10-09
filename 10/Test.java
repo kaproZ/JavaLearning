@@ -4,7 +4,8 @@ class A{
 		this.count++;
 		System.out.print(A.getCount());
 	}
-	static public int getCount(){
+	static public int getCoun
+	t(){
 		return count;
 	}
 }
